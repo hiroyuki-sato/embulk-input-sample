@@ -1,0 +1,4 @@
+in:
+  type: sample
+out:
+  type: stdout

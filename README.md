@@ -1,6 +1,6 @@
 # Sample input plugin for Embulk
 
-TODO: Write short description here and build.gradle file.
+Embulk input plugin sample.
 
 ## Overview
 
@@ -11,19 +11,32 @@ TODO: Write short description here and build.gradle file.
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
 
 ## Example
 
 ```yaml
 in:
   type: sample
-  option1: example1
-  option2: example2
+out:
+  type: stdout
 ```
 
+```
+*************************** 1 ***************************
+   string (   string) : string
+  boolean (  boolean) : true
+     long (     long) : 10
+   double (   double) : 3.14
+timestamp (timestamp) : 2016-01-01 00:00:00 UTC
+     json (     json) : json
+*************************** 2 ***************************
+   string (   string) : string
+  boolean (  boolean) : true
+     long (     long) : 10
+   double (   double) : 3.14
+timestamp (timestamp) : 2016-01-01 00:00:00 UTC
+     json (     json) : json
+```
 
 ## Build
 
